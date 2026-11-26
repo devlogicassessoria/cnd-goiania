@@ -1,0 +1,4 @@
+selenium>=4.20
+openpyxl>=3.1
+pypdf>=4.0
+pyinstaller>=6.6

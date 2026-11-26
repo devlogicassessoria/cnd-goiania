@@ -1,0 +1,27 @@
+# ambientes e build
+.venv/
+.venv-linux/
+.tools/
+build/
+dist/
+__pycache__/
+*.spec
+*.xwd
+
+# NÃO versionar planilhas de clientes nem certidões geradas
+*.xlsx
+*.xls
+*.csv
+!modelo_planilha.xlsx
+*.pdf
+CND Goiania/
+_temp/
+
+# configurações locais do Claude Code
+.claude/settings.local.json
+
+# o .exe pronto fica na raiz e É versionado (CND_Goiania.exe)
+
+# arquivos de trava do LibreOffice/Excel
+.~lock.*
+~$*

@@ -1,0 +1,44 @@
+{
+  "urls": {
+    "menu_certidoes": "https://www.goiania.go.gov.br/sistemas/saces/asp/saces00000f0.asp?sigla=sccer",
+    "cnd_mobiliario_direto": "https://www.goiania.go.gov.br/sistemas/sccer/asp/sccer00101f0.asp",
+    "situacao_contribuinte": "https://www.goiania.go.gov.br/sistemas/sccae/asp/sccae00010r0.asp"
+  },
+  "filtro_municipio": "GOIANIA",
+  "texto_verificacao": ".",
+  "captcha_manual_se_falhar": true,
+  "headless": false,
+  "timeout_segundos": 30,
+  "controle_requisicoes": {
+    "intervalo_min_segundos": 6,
+    "intervalo_max_segundos": 15,
+    "pausa_longa_a_cada": 25,
+    "pausa_longa_min_segundos": 60,
+    "pausa_longa_max_segundos": 150,
+    "maximo_por_hora": 120,
+    "espera_apos_erro_segundos": 20,
+    "espera_maxima_apos_erro_segundos": 300,
+    "erros_seguidos_para_resfriar": 3,
+    "resfriamento_segundos": 600
+  },
+  "tentativas_por_empresa": 2,
+
+  "classificacao": {
+    "palavras_positiva": ["CERTIDAO POSITIVA", "POSITIVA DE DEBITO"],
+    "palavras_efeito_negativa": ["EFEITO DE NEGATIVA", "EFEITOS DE NEGATIVA"],
+    "palavras_negativa": ["CERTIDAO NEGATIVA", "NEGATIVA DE DEBITO"],
+    "efeito_negativa_vai_para": "NEGATIVA",
+    "efeito_negativa_conta_como_pendencia": true,
+
+    "palavras_pendencia": ["PENDENCIA", "PENDENCIAS", "PENDENTE", "CONSTAM DEBITOS", "DEBITOS EM ABERTO", "PARCELAD", "EXIGIBILIDADE SUSPENSA"],
+    "frases_sem_pendencia": ["NAO CONSTA DEBITO", "NAO CONSTAM PENDENCIAS", "NAO CONSTA PENDENCIA", "SEM PENDENCIAS", "SEM PENDENCIA", "NAO CONSTAM DEBITOS", "NAO HA PENDENCIAS", "INEXISTENCIA DE PENDENCIAS"]
+  },
+
+  "pastas": {
+    "com_pendencia": "Com Pendencia",
+    "sem_pendencia": "Sem Pendencia",
+    "positiva": "Positiva",
+    "negativa": "Negativa",
+    "nao_classificada": "_Nao Classificadas"
+  }
+}
